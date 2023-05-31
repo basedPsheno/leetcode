@@ -9,4 +9,4 @@ class Solution:
                 cur_wealth += wealth
             if cur_wealth > max_wealth:
                 max_wealth = cur_wealth
-        return max_wealth
+        return max_wealth 
