@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/stone-game-iii/
-
+ 
 class Solution:
     def stoneGameIII(self, stoneValue: List[int]) -> str:
         n = len(stoneValue)
