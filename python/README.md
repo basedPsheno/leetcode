@@ -10,7 +10,7 @@ class Solution:
 def main():
     data = []
     solution = Solution()
-    print(Solution.foo(solution, data))
+    print(solution.foo(data))
 
 
 if __name__ == "__main__":
