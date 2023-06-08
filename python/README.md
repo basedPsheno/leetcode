@@ -1,5 +1,6 @@
 ### You can use this code as a template for VS Code.
 
+main.py:
 ``` python
 class Solution:
     def foo(self):
