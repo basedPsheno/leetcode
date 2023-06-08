@@ -1,6 +1,6 @@
-You can use this code as a template for VS Code.
+### You can use this code as a template for VS Code.
 
-```
+``` python
 class Solution:
     def foo(self):
         pass
