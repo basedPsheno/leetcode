@@ -7,34 +7,25 @@
 #         self.next = next
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        if head == None:
+        if not head:
             return None
-        if k == 0:
-            return head
 
         n = 1
         node = head
 
-        while node.next != None:
+        while node.next:
             n += 1
             node = node.next
 
         k %= n
-        if k == 0:
-            return head
-        node = head
+        node.next = head
+        temp_node = head
 
-        for i in range(n - k - 1):
-            node = node.next
+        for _ in range(n - k - 1):
+            temp_node = temp_node.next
 
-        new_head = node.next
-        node.next = None
-        new_node = new_head
-
-        while new_node.next != None:
-            new_node = new_node.next
-
-        new_node.next = head
+        new_head = temp_node.next
+        temp_node.next = None
 
 
         return new_head
