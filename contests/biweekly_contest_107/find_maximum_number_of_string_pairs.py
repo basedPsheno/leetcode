@@ -10,4 +10,4 @@ class Solution:
                 if words[i] == words[j][::-1]:
                     pairs += 1
 
-        return pairs
+        return pairs 
