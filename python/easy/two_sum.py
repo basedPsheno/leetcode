@@ -1,13 +1,11 @@
 # https://leetcode.com/problems/two-sum/
 
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        match = {}
+        pref = dict()
 
         for i in range(len(nums)):
-            match[nums[i]] = i
-        
-        for i in range(len(nums)):
-            compl = target - nums[i]
-            if compl in match and match[compl] != i:
-                return [i, match[compl]]
+            if target - nums[i] in pref:
+                return [i, pref[target - nums[i]]]
+            pref[nums[i]] = i
